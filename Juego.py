@@ -1,6 +1,7 @@
 class Juego:
     def __init__(self):
         self.jugando = False
+        self.contador = 0
 
     def iniciar_juego(self):
         self.jugando = True
@@ -42,7 +43,12 @@ class Juego:
         print("")
         print("El mensaje cifrado es: ")
         print(mensaje_cifrado)
+        self.contador += 1
         print("")
+        print(f"Llevas {self.contador} palabras cifradas")
+        print("")
+
+   
 
     def salir(self):
         print(f"\nHasta luego. ¡Vuelve pronto!")
