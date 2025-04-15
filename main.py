@@ -7,8 +7,7 @@ def mostrar_menu():
     print("======================")
 
 def main():
-    nombre = input("Ingresa tu nombre para comenzar: ")
-    juego = Juego(nombre)
+    juego = Juego()
     valor=True
     while valor:
         mostrar_menu()
