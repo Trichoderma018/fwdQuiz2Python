@@ -15,11 +15,8 @@ class Juego:
         self.jugando = True
         self.ordenamiento()
     def ordenamiento(self):
-        lista_num = input("Por favor, ingrese los números separados por espacios: ")
+        lista_num = [24,65,4,7,27,82,58,-200,-100,-50]
         lista_final = []
-        for i in lista_num.split():
-            lista_final.append(int(i))
-            
         while lista_num:
             elemento_maximo = lista_num[0]
             for numero in lista_num:
