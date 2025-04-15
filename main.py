@@ -2,8 +2,9 @@ from Juego import Juego
 
 def mostrar_menu():
     print("=== MENÚ PRINCIPAL ===")
-    print("1. Iniciar juego")
-    print("2. Salir")
+    print("1. Iniciar juego de cifrado")
+    print("2. Iniciar juego ordenar")
+    print("3. Salir")
     print("======================")
 
 def main():
@@ -16,6 +17,8 @@ def main():
         if opcion == "1":
             juego.iniciar_juego()
         elif opcion == "2":
+            juego.iniciar_ordenado()
+        elif opcion == "3":
             juego.salir()
             valor=False
         else:

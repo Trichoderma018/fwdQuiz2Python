@@ -8,6 +8,20 @@ class Juego:
         print("El juego ha comenzado..")
         self.cifrar()
         print("¡Gracias por jugar!\n")
+    def iniciar_ordenado(self):
+        self.jugando = True
+        self.ordenamiento()
+    def ordenamiento(self):
+        lista_num = [24,65,4,7,27,82,58,-200,-100,-50]
+        lista_final = []
+        while lista_num:
+            elemento_maximo = lista_num[0]
+            for numero in lista_num:
+                if numero < elemento_maximo:
+                    elemento_maximo = numero
+            lista_final.append(elemento_maximo)
+            lista_num.remove(elemento_maximo)
+        print(f"La lista ordenada es: {lista_final}")
 
     def cifrar(self):
         mensaje_cifrado=""
